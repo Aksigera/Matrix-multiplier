@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+/*input[disabled].cell {*/
+/*color: #000000;*/
+/*background-color: rgba(89, 110, 180, 0.27);*/
+/*border: 1px solid grey;*/
+/*width:37px;*/
+/*height: 27px;*/
+/*}*/
+
+.wrapper {
+    overflow: hidden;
+}
+.lineActs > * {
+    display: inline-block;
+    margin: 0 3px 0 3px;
+}
+
+.lineActs > label * {
+    display: inline-block;
+}
+
+.actBtn {
+    display: block;
+}
+
+.leftMenu {
+    padding: 30px;
+    width: 300px;
+    float: left;
+    height: 100%;
+    padding-bottom: 160px;
+}
+
+.wrapper > *:not(:first-child) {
+    display: inline-block;
+}
+
+.simpleBtn {
+    background-color: whitesmoke;
+    padding: 8px;
+    border: 1px solid rgba(81, 81, 81, 0.5);
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.simpleBtn:hover {
+
+}
+
+.textWight {
+    fill: white !important;
+}
+
+.actSVG.hover, .textWight.hover {
+    fill: green;
+    cursor: pointer;
+    background-color: green;
+}
+
+.leftMenu {
+    background-color: #bcbcbc;
+    margin: 0 20px 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.tableWrpr {
+    border: solid 2px black;
+    padding: 0 8px;
+    margin: 20px 20px 20px 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.alignCenter .tableWrpr {
+    vertical-align: middle;
+}
+
+.textAlign {
+    text-align: center;
+}
+
+.tableWrprIn {
+    margin: -2px -4px;
+    padding: 5px 0;
+    background-color: white;
+}
+
+h1.indexA {
+    font-family: sans-serif;
+    font-weight: 100;
+    display: inline-block;
+}
+
+h1.indexB {
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+.row {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 14px;
+}
+
+.col {
+    width: 35px;
+    height: 100%;
+    margin-right: 14px;
+}
+
+.cell {
+    height: 25px;
+    width: 35px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    outline: none;
+}
+
+.lineActs p {
+    cursor: default;
+}
+
+div.text {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+    padding-top: 30px;
+}
+
+.blue.leftMenu {
+    background-color: #5199db;
+}
+
+.blue.simpleBtn {
+    border: rgba(0, 40, 127, 0.5) 1px solid;
+}
+
+.red.leftMenu {
+    background-color: #f6c1c0;
+}
+
+.red.simpleBtn {
+    border: rgba(161, 71, 73, 0.5) 1px solid;
+}
+
+.error {
+    display: none;
+}
+
+.red.error {
+    display: block;
+}

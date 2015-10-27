@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="tablesCreator.js"></script>
+    <script src="onload.js"></script>
+    <script src="calculator.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="leftMenu">
+        <div>
+            <svg version="1.1" height="100px"
+                 xmlns="http://www.w3.org/2000/svg">
+                <path fill="url(#MyGradient)" class="actSVG" stroke="green" stroke-width="0.5px"
+                      d="M 4,1 l 180,0 q 2,0 3,2 l 15,15 q 2,3 0,6 l -15,15 q -1,2 -3,2 l -180,0 q -3,0 -3,-3 l 0,-34 q 0,-3 3,-3"></path>
+                <defs>
+                    <linearGradient id="MyGradient" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0%" stop-color="#01aa02"/>
+                        <stop offset="100%" stop-color="green"/>
+                    </linearGradient>
+                </defs>
+                <text x="20" y="25" fill="#fff" font-size="16" font-family="sans-serif" class="textWight hover">Умножить
+                    матрицы
+                </text>
+
+            </svg>
+            <button id="clearTables" class="actBtn simpleBtn">Очистить матрицы</button>
+            <button id="swapTablesAB" class="actBtn simpleBtn">Поменять матрицы местами</button>
+        </div>
+        <div class="lineActs">
+            <label>
+                <input type="radio" checked name="mtrxChoose"/>
+
+                <p>Матрица A</p></label>
+
+            <p class="hidden">Developed by Aksenov Georgij</p>
+            <label>
+                <input type="radio" name="mtrxChoose"/>
+
+                <p>Матрица B</p>
+            </label></div>
+        <div class="lineActs">
+            <button class="simpleBtn">Добавить</button>
+            <button class="simpleBtn">Удалить</button>
+            <p>строку</p>
+        </div>
+        <div class="lineActs">
+            <button class="simpleBtn">Добавить</button>
+            <button class="simpleBtn">Удалить</button>
+            <p>столбец</p>
+        </div>
+        <div class="error"><p>
+            Такие матрицы нельзя перемножить,
+            так как количество столбцов матрицы А
+            не равно количеству строк матрицы В.
+        </p></div>
+    </div>
+    <div class="tableWrpr">
+        <div class="tableWrprIn">
+            <div class="tableC" id="tableC"></div>
+        </div>
+    </div>
+    <div class="alignCenter">
+        <div class="tableWrpr">
+            <div class="tableWrprIn">
+                <div class="tableA" id="tableA"></div>
+            </div>
+        </div>
+        <h1 class="indexA">A</h1>
+    </div>
+    <br/>
+
+    <div class='textAlign'>
+        <div class="tableWrpr">
+            <div class="tableWrprIn">
+                <div class="tableB" id="tableB"></div>
+            </div>
+        </div>
+        <h1 class="indexB">B</h1>
+    </div>
+</div>
+    <div class="text"><p>Произведение матриц AB состоит из всех возможных комбинаций скалярных произведений вектор-строк
+        матрицы A и
+        вектор-столбцов матрицы B. Элемент матрицы AB с индексами i, j есть скалярное произведение i-ой вектор-строки
+        матрицы A и j-го вектор-столбца матрицы B.</p></div>
+
+</body>
+
+</html>
